@@ -1,0 +1,71 @@
+2025-04-14 20:14:06,527 - datasets - INFO - PyTorch version 2.6.0 available.
+2025-04-14 20:14:06,620 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-m3
+2025-04-14 20:15:22,364 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 20:15:48,349 - aiogram.dispatcher - INFO - Start polling
+2025-04-14 20:15:48,747 - aiogram.dispatcher - INFO - Run polling for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-14 20:17:05,409 - aiogram.event - INFO - Update id=487375187 is not handled. Duration 0 ms by bot id=7635717836
+2025-04-14 20:17:31,852 - bot.app.handlers - INFO - [2025-04-14 20:17:31] User ID: 1064885104, Username: @alinshn, Action: started the bot
+2025-04-14 20:17:32,434 - aiogram.event - INFO - Update id=487375188 is handled. Duration 583 ms by bot id=7635717836
+2025-04-14 20:17:41,067 - aiogram.event - INFO - Update id=487375189 is not handled. Duration 0 ms by bot id=7635717836
+2025-04-14 20:17:54,214 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-14 20:17:54,214 - aiogram.dispatcher - INFO - Polling stopped for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-14 20:17:54,214 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-14 20:18:02,982 - datasets - INFO - PyTorch version 2.6.0 available.
+2025-04-14 20:18:03,053 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-m3
+2025-04-14 20:18:07,770 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 20:18:30,694 - aiogram.dispatcher - INFO - Start polling
+2025-04-14 20:18:31,017 - aiogram.dispatcher - INFO - Run polling for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-14 20:18:33,683 - bot.app.handlers - INFO - [2025-04-14 20:18:33] User ID: 1064885104, Username: @alinshn, Action: requested bot capabilities
+2025-04-14 20:18:34,136 - aiogram.event - INFO - Update id=487375190 is handled. Duration 452 ms by bot id=7635717836
+2025-04-14 20:19:20,434 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-14 20:19:20,435 - aiogram.dispatcher - INFO - Polling stopped for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-14 20:19:20,435 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-14 20:22:05,841 - datasets - INFO - PyTorch version 2.6.0 available.
+2025-04-14 20:22:05,907 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-m3
+2025-04-14 20:22:10,273 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-14 20:22:32,770 - aiogram.dispatcher - INFO - Start polling
+2025-04-14 20:22:33,111 - aiogram.dispatcher - INFO - Run polling for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-14 20:23:52,633 - bot.app.handlers - INFO - [2025-04-14 20:23:52] User ID: 1064885104, Username: @alinshn, Action: started new dialog
+2025-04-14 20:23:53,024 - aiogram.event - INFO - Update id=487375191 is handled. Duration 391 ms by bot id=7635717836
+2025-04-14 20:24:16,867 - bot.app.handlers - INFO - [2025-04-14 20:24:16] User ID: 1064885104, Username: @alinshn, Action: sent message: куда сходить на выходных в Академгородке?
+2025-04-14 20:24:19,256 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 20:24:19,263 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: starting RAG chain, Question: куда сходить на выходных в Академгородке?
+2025-04-14 20:24:21,500 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 20:24:21,501 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, context results (hotels, cafes, ents): [False, True, True]
+2025-04-14 20:24:21,555 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: processing contexts
+2025-04-14 20:24:32,882 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-14 20:24:32,883 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: generating initial response
+2025-04-14 20:24:32,883 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: skipping distance calculation
+2025-04-14 20:24:33,200 - bot.app.handlers - INFO - [2025-04-14 20:24:33] User ID: 1064885104, Username: @alinshn, Action: received response: В Академгородке вы можете посетить следующие места:
+
+1. **Интегральный музей-квартира повседневности Академгородка**  
+   Адрес: Академгородок  
+   Краткое описание: Тематические экскурсии, посвященные истории Академгородка и его обитателям.  
+   Цена: По предварительному звонку.
+
+2. **Spot and Choo's**  
+   Адрес: Ул. Ильича, 10  
+   Краткое описание: Легендарная бургерная, популярная среди местных жителей. Здесь можно насладиться бургером на летней веранде.  
+   Цена: Средний чек около 500–700 рублей.
+
+3. **Юность**  
+   Адрес: г. Новосибирск, Академгородок, пр-т. Строителей, 21  
+   Краткое описание: Культурное пространство и арт-резиденция, где проходят спектакли и творческие мероприятия.  
+   Цена: Вход бесплатный, но уточняйте стоимость мероприятий.
+
+4. **Кафе «Скворечник»**  
+   Адрес: Ул. Терешковой, 12а  
+   Краткое описание: Уютное кафе с домашней атмосферой и концертами. Здесь можно расслабиться и поесть домашнюю кухню.  
+   Цена: Средний чек около 300–700 рублей.
+
+Для питания рекомендую **Gusi в Академе** (Николаева, 12/2) или **Clever** (Морской просп., 54) после посещения этих мест.
+2025-04-14 20:24:33,333 - aiogram.event - INFO - Update id=487375192 is handled. Duration 16468 ms by bot id=7635717836
+2025-04-14 20:25:44,336 - bot.app.handlers - INFO - [2025-04-14 20:25:44] User ID: 1064885104, Username: @alinshn, Action: ended the dialog
+2025-04-14 20:25:44,558 - aiogram.event - INFO - Update id=487375193 is handled. Duration 222 ms by bot id=7635717836
+2025-04-14 20:25:46,844 - aiogram.event - INFO - Update id=487375194 is handled. Duration 222 ms by bot id=7635717836
+2025-04-14 20:26:07,239 - bot.app.handlers - INFO - [2025-04-14 20:26:07] User ID: 1064885104, Username: @alinshn, Action: rate - супер
+2025-04-14 20:26:07,368 - aiogram.event - INFO - Update id=487375195 is handled. Duration 131 ms by bot id=7635717836
+2025-04-14 20:26:27,655 - aiogram.event - INFO - Update id=487375196 is not handled. Duration 0 ms by bot id=7635717836
+2025-04-14 20:41:45,264 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-14 20:41:45,265 - aiogram.dispatcher - INFO - Polling stopped for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-14 20:41:45,265 - aiogram.dispatcher - INFO - Polling stopped

@@ -1,0 +1,423 @@
+2025-04-05 18:50:42,561 - datasets - INFO - PyTorch version 2.6.0 available.
+2025-04-05 18:50:42,625 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-m3
+2025-04-05 18:50:47,045 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-05 18:51:10,179 - aiogram.dispatcher - INFO - Start polling
+2025-04-05 18:51:10,513 - aiogram.dispatcher - INFO - Run polling for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-05 18:51:10,609 - bot.app.handlers - INFO - [2025-04-05 18:51:10] User ID: 1064885104, Username: @alinshn, Action: started the bot
+2025-04-05 18:51:11,035 - aiogram.event - INFO - Update id=487375127 is handled. Duration 425 ms by bot id=7635717836
+2025-04-05 18:52:10,308 - bot.app.handlers - INFO - [2025-04-05 18:52:10] User ID: 1064885104, Username: @alinshn, Action: requested bot capabilities
+2025-04-05 18:52:10,541 - aiogram.event - INFO - Update id=487375128 is handled. Duration 233 ms by bot id=7635717836
+2025-04-05 18:52:19,081 - bot.app.handlers - INFO - [2025-04-05 18:52:19] User ID: 1064885104, Username: @alinshn, Action: requested contacts
+2025-04-05 18:52:19,326 - aiogram.event - INFO - Update id=487375129 is handled. Duration 245 ms by bot id=7635717836
+2025-04-05 18:52:21,885 - bot.app.handlers - INFO - [2025-04-05 18:52:21] User ID: 1064885104, Username: @alinshn, Action: started new dialog
+2025-04-05 18:52:22,084 - aiogram.event - INFO - Update id=487375130 is handled. Duration 199 ms by bot id=7635717836
+2025-04-05 18:52:33,342 - bot.app.handlers - INFO - [2025-04-05 18:52:33] User ID: 1064885104, Username: @alinshn, Action: sent message: составь маршрут по музеям академгородка
+2025-04-05 18:52:35,099 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 18:52:35,106 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: starting RAG chain, Question: составь маршрут по музеям академгородка
+2025-04-05 18:52:36,484 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 18:52:36,485 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 18:52:36,549 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: processing contexts
+2025-04-05 18:52:42,553 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 18:52:42,554 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: generating initial response
+2025-04-05 18:52:42,637 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: calculating distances
+2025-04-05 18:53:00,478 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 18:53:00,479 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: response generation complete
+2025-04-05 18:53:00,766 - bot.app.handlers - INFO - [2025-04-05 18:53:00] User ID: 1064885104, Username: @alinshn, Action: received response: Вот маршрут по музеям Академгородка:
+
+1. **Интегральный музей-квартира повседневности Академгородка**  
+   Адрес: ул. Лаврентьева, 6  
+   Описание: Музей компьютерной техники и ретро-фото экспонатов, гостиная учёного.  
+   График работы: по предварительному звонку.
+
+2. **Академбюро**  
+   Адрес: пр. Академика Лаврентьева, 6  
+   Описание: Место, где можно узнать об истории Академгородка и его значимых фигурах.  
+   График работы: по записи.
+
+3. **Тропинки сибирских учёных**  
+   Адрес: Академгородок  
+   Описание: Прогулка по лесным тропинкам, названным в честь сибирских учёных. Интересная навигация с указателями.  
+   График работы: необходимо уточнить.
+
+Для обеда рекомендую заглянуть в **Gusi в Академе** (адрес: Николаева, 12/2, 1 этаж) с американской и европейской кухней, средний чек 700–1700 рублей.
+
+На ночь остановитесь в **Отель Park Wood Академгородок** по адресу улица Арбузова, д.6/2, с минимальной стоимостью от 5773₽ за ночь. 
+
+Данные о расстояниях между объектами: От Gusi в Академе до Интегральный музей-квартира повседневности Академгородка около 3 км (примерное время в пути пешком — 36 минут, на машине — 8 минут). От Gusi в Академе до Академбюро около 2 км (примерное время в пути пешком — 24 минуты, на машине — 5 минут). От Gusi в Академе до Тропинок сибирских учёных около 2 км (примерное время в пути пешком — 24 минуты, на машине — 5 минут). 
+
+Пожалуйста, имейте в виду, что расстояния и время приблизительные.
+2025-04-05 18:53:00,977 - aiogram.event - INFO - Update id=487375131 is handled. Duration 27635 ms by bot id=7635717836
+2025-04-05 18:53:19,327 - bot.app.handlers - INFO - [2025-04-05 18:53:19] User ID: 1064885104, Username: @alinshn, Action: ended the dialog
+2025-04-05 18:53:19,624 - aiogram.event - INFO - Update id=487375132 is handled. Duration 298 ms by bot id=7635717836
+2025-04-05 18:53:24,043 - aiogram.event - INFO - Update id=487375133 is handled. Duration 266 ms by bot id=7635717836
+2025-04-05 18:53:25,637 - bot.app.handlers - INFO - [2025-04-05 18:53:25] User ID: 1064885104, Username: @alinshn, Action: rate - 5 ⭐⭐⭐⭐⭐
+2025-04-05 18:53:25,792 - aiogram.event - INFO - Update id=487375134 is handled. Duration 155 ms by bot id=7635717836
+2025-04-05 18:53:35,831 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-05 18:53:35,831 - aiogram.dispatcher - INFO - Polling stopped for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-05 18:53:35,831 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-05 18:53:42,657 - datasets - INFO - PyTorch version 2.6.0 available.
+2025-04-05 18:53:42,724 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-m3
+2025-04-05 18:53:47,367 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-05 18:54:10,642 - aiogram.dispatcher - INFO - Start polling
+2025-04-05 18:54:10,989 - aiogram.dispatcher - INFO - Run polling for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-05 18:58:21,931 - bot.app.handlers - INFO - [2025-04-05 18:58:21] User ID: 1005066193, Username: @joouddo, Action: started the bot
+2025-04-05 18:58:22,329 - aiogram.event - INFO - Update id=487375135 is handled. Duration 398 ms by bot id=7635717836
+2025-04-05 18:58:40,490 - bot.app.handlers - INFO - [2025-04-05 18:58:40] User ID: 1005066193, Username: @joouddo, Action: requested contacts
+2025-04-05 18:58:40,769 - aiogram.event - INFO - Update id=487375136 is handled. Duration 278 ms by bot id=7635717836
+2025-04-05 18:58:45,384 - bot.app.handlers - INFO - [2025-04-05 18:58:45] User ID: 1005066193, Username: @joouddo, Action: requested bot capabilities
+2025-04-05 18:58:45,603 - aiogram.event - INFO - Update id=487375137 is handled. Duration 219 ms by bot id=7635717836
+2025-04-05 19:00:18,645 - aiogram.event - INFO - Update id=487375138 is handled. Duration 496 ms by bot id=7635717836
+2025-04-05 19:00:21,329 - bot.app.handlers - INFO - [2025-04-05 19:00:21] User ID: 1005066193, Username: @joouddo, Action: rate - 5 ⭐⭐⭐⭐⭐
+2025-04-05 19:00:21,451 - aiogram.event - INFO - Update id=487375139 is handled. Duration 124 ms by bot id=7635717836
+2025-04-05 19:00:23,727 - bot.app.handlers - INFO - [2025-04-05 19:00:23] User ID: 1005066193, Username: @joouddo, Action: started new dialog
+2025-04-05 19:00:24,043 - aiogram.event - INFO - Update id=487375140 is handled. Duration 317 ms by bot id=7635717836
+2025-04-05 19:00:30,587 - bot.app.handlers - INFO - [2025-04-05 19:00:30] User ID: 1005066193, Username: @joouddo, Action: started new dialog
+2025-04-05 19:00:30,874 - aiogram.event - INFO - Update id=487375141 is handled. Duration 285 ms by bot id=7635717836
+2025-04-05 19:00:32,533 - bot.app.handlers - INFO - [2025-04-05 19:00:32] User ID: 1005066193, Username: @joouddo, Action: requested contacts
+2025-04-05 19:00:33,006 - aiogram.event - INFO - Update id=487375142 is handled. Duration 473 ms by bot id=7635717836
+2025-04-05 19:00:34,885 - bot.app.handlers - INFO - [2025-04-05 19:00:34] User ID: 1005066193, Username: @joouddo, Action: requested bot capabilities
+2025-04-05 19:00:35,124 - aiogram.event - INFO - Update id=487375143 is handled. Duration 237 ms by bot id=7635717836
+2025-04-05 19:00:36,757 - aiogram.event - INFO - Update id=487375144 is handled. Duration 222 ms by bot id=7635717836
+2025-04-05 19:00:38,401 - bot.app.handlers - INFO - [2025-04-05 19:00:38] User ID: 1005066193, Username: @joouddo, Action: rate - 5 ⭐⭐⭐⭐⭐
+2025-04-05 19:00:38,545 - aiogram.event - INFO - Update id=487375145 is handled. Duration 145 ms by bot id=7635717836
+2025-04-05 19:00:39,666 - bot.app.handlers - INFO - [2025-04-05 19:00:39] User ID: 1005066193, Username: @joouddo, Action: started new dialog
+2025-04-05 19:00:39,909 - aiogram.event - INFO - Update id=487375146 is handled. Duration 244 ms by bot id=7635717836
+2025-04-05 19:00:45,814 - bot.app.handlers - INFO - [2025-04-05 19:00:45] User ID: 1005066193, Username: @joouddo, Action: started new dialog
+2025-04-05 19:00:46,020 - aiogram.event - INFO - Update id=487375147 is handled. Duration 206 ms by bot id=7635717836
+2025-04-05 19:02:04,597 - bot.app.handlers - INFO - [2025-04-05 19:02:04] User ID: 1064885104, Username: @alinshn, Action: started new dialog
+2025-04-05 19:02:04,808 - aiogram.event - INFO - Update id=487375148 is handled. Duration 211 ms by bot id=7635717836
+2025-04-05 19:02:31,505 - bot.app.handlers - INFO - [2025-04-05 19:02:31] User ID: 1064885104, Username: @alinshn, Action: sent message: как дела
+2025-04-05 19:02:33,104 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:02:33,111 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: starting RAG chain, Question: как дела
+2025-04-05 19:02:34,351 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:02:34,351 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, context results (hotels, cafes, ents): [False, False, False]
+2025-04-05 19:02:34,351 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: processing contexts
+2025-04-05 19:02:35,472 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:02:35,473 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: generating initial response
+2025-04-05 19:02:35,473 - pipeplines.ragPipeline_tgbot - INFO - User: 1064885104, Action: skipping distance calculation
+2025-04-05 19:02:35,600 - bot.app.handlers - INFO - [2025-04-05 19:02:35] User ID: 1064885104, Username: @alinshn, Action: received response: У меня всё хорошо, спасибо! Как могу помочь вам сегодня?
+2025-04-05 19:02:35,729 - aiogram.event - INFO - Update id=487375149 is handled. Duration 4224 ms by bot id=7635717836
+2025-04-05 19:03:20,786 - bot.app.handlers - INFO - [2025-04-05 19:03:20] User ID: 1064885104, Username: @alinshn, Action: restarted the dialog
+2025-04-05 19:03:20,994 - aiogram.event - INFO - Update id=487375150 is handled. Duration 209 ms by bot id=7635717836
+2025-04-05 19:03:26,775 - bot.app.handlers - INFO - [2025-04-05 19:03:26] User ID: 1005066193, Username: @joouddo, Action: sent message: Привет, можешь, пожалуйста мне составить подробный маршрут по территории одного места. Мне там очень нравится гулять и наблюдать за природой. Я заряжаюсь энергией когда гуляю по Академгородку.
+2025-04-05 19:03:29,389 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:03:29,390 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Привет, можешь, пожалуйста мне составить подробный маршрут по территории одного места. Мне там очень нравится гулять и наблюдать за природой. Я заряжаюсь энергией когда гуляю по Академгородку.
+2025-04-05 19:03:30,783 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:03:30,784 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 19:03:30,850 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:03:40,813 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:03:40,814 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:03:40,899 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: calculating distances
+2025-04-05 19:03:48,538 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:03:48,538 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: response generation complete
+2025-04-05 19:03:48,838 - bot.app.handlers - INFO - [2025-04-05 19:03:48] User ID: 1005066193, Username: @joouddo, Action: received response: Привет! Вот подробный маршрут по Академгородку:
+
+1. **Тропинки сибирских учёных**
+   - **Адрес:** Академгородок
+   - **Описание:** Прогулка по лесным тропинкам с указателями, посвящёнными именам сибирских учёных. Указатели светятся в темноте.
+   - **График работы:** Необходимо уточнить.
+
+2. **Академбюро**
+   - **Адрес:** пр. Академика Лаврентьева, 6
+   - **Описание:** Экскурсии по Академгородку, погружение в атмосферу научного центра. Возможность посетить Интегральный музей.
+   - **График работы:** Не указано.
+
+3. **Кафе «Скворечник»**
+   - **Адрес:** Ул. Терешковой, 12а
+   - **Описание:** Уютное кафе с домашней атмосферой, где можно отдохнуть и насладиться десертами.
+   - **График работы:** С 12:00 до 23:00.
+
+4. **Spot and Choo's**
+   - **Адрес:** Ул. Ильича, 10
+   - **Описание:** Место с приятной атмосферой для отдыха.
+   - **График работы:** Ежедневно с 12:00 до 23:00.
+
+### Где перекусить:
+- **Гуси в Академе**
+  - **Адрес:** Николаева, 12/2
+  - **Средний чек:** 700–1700 рублей
+  - **График работы:** Пн-чт, вс 12:00–0:00, пт-сб 12:00–2:00.
+
+### Где переночевать:
+- **Отель Park Wood Академгородок**
+  - **Адрес:** ул. Арбузова, 6/2
+  - **Минимальная стоимость за ночь:** от 5773₽
+
+Наслаждайтесь прогулками по Академгородку!
+2025-04-05 19:03:48,966 - aiogram.event - INFO - Update id=487375151 is handled. Duration 22191 ms by bot id=7635717836
+2025-04-05 19:04:46,006 - bot.app.handlers - INFO - [2025-04-05 19:04:46] User ID: 1005066193, Username: @joouddo, Action: sent message: А можешь мне написать расстояния и сколько займет такой маршрут?
+2025-04-05 19:04:48,243 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:04:48,243 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: А можешь мне написать расстояния и сколько займет такой маршрут?
+2025-04-05 19:04:49,565 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:04:49,566 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 19:04:49,620 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:04:52,102 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:04:52,103 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:04:52,189 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: calculating distances
+2025-04-05 19:04:56,889 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:04:56,890 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: response generation complete
+2025-04-05 19:04:56,996 - bot.app.handlers - INFO - [2025-04-05 19:04:56] User ID: 1005066193, Username: @joouddo, Action: received response: К сожалению, у меня нет информации о расстояниях между указанными местами в Академгородке и времени, необходимом для их посещения. Рекомендую использовать карту или GPS-навигатор для точного расчета расстояний и времени в пути. Если нужны еще какие-то рекомендации, дайте знать!
+2025-04-05 19:04:57,130 - aiogram.event - INFO - Update id=487375152 is handled. Duration 11125 ms by bot id=7635717836
+2025-04-05 19:07:15,654 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-05 19:07:15,655 - aiogram.dispatcher - INFO - Polling stopped for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-05 19:07:15,655 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-05 19:07:23,960 - datasets - INFO - PyTorch version 2.6.0 available.
+2025-04-05 19:07:24,024 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-m3
+2025-04-05 19:07:28,625 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-04-05 19:07:52,339 - aiogram.dispatcher - INFO - Start polling
+2025-04-05 19:07:52,666 - aiogram.dispatcher - INFO - Run polling for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-05 19:07:57,287 - bot.app.handlers - INFO - [2025-04-05 19:07:57] User ID: 1064885104, Username: @alinshn, Action: requested bot capabilities
+2025-04-05 19:07:57,715 - aiogram.event - INFO - Update id=487375153 is handled. Duration 429 ms by bot id=7635717836
+2025-04-05 19:08:03,913 - bot.app.handlers - INFO - [2025-04-05 19:08:03] User ID: 1064885104, Username: @alinshn, Action: started the bot
+2025-04-05 19:08:04,115 - aiogram.event - INFO - Update id=487375154 is handled. Duration 201 ms by bot id=7635717836
+2025-04-05 19:15:16,396 - bot.app.handlers - INFO - [2025-04-05 19:15:16] User ID: 1005066193, Username: @joouddo, Action: restarted the dialog
+2025-04-05 19:15:16,631 - aiogram.event - INFO - Update id=487375155 is handled. Duration 236 ms by bot id=7635717836
+2025-04-05 19:16:26,418 - aiogram.event - INFO - Update id=487375156 is not handled. Duration 1 ms by bot id=7635717836
+2025-04-05 19:17:58,577 - bot.app.handlers - INFO - [2025-04-05 19:17:58] User ID: 1005066193, Username: @joouddo, Action: started new dialog
+2025-04-05 19:17:58,892 - aiogram.event - INFO - Update id=487375157 is handled. Duration 315 ms by bot id=7635717836
+2025-04-05 19:18:11,551 - bot.app.handlers - INFO - [2025-04-05 19:18:11] User ID: 1005066193, Username: @joouddo, Action: sent message: Составь мне план на неделю по культовым местам Новосибирска, мне очень нравится останавливаться в дешёвых местах, а в качестве транспорта я предпочитаю велосипед, мой бюджет 100 рублей
+2025-04-05 19:18:14,439 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:18:14,445 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Составь мне план на неделю по культовым местам Новосибирска, мне очень нравится останавливаться в дешёвых местах, а в качестве транспорта я предпочитаю велосипед, мой бюджет 100 рублей
+2025-04-05 19:18:15,816 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:18:15,817 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, False, True]
+2025-04-05 19:18:15,866 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:18:18,228 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:18:18,229 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:18:18,299 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: calculating distances
+2025-04-05 19:18:20,993 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:18:20,994 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: response generation complete
+2025-04-05 19:18:21,089 - bot.app.handlers - INFO - [2025-04-05 19:18:21] User ID: 1005066193, Username: @joouddo, Action: received response: К сожалению, ваш бюджет в 100 рублей не позволяет составить полноценный план на неделю с учётом ночлега и посещения культовых мест в Новосибирске. Минимальная стоимость ночлега в дешёвых местах начинается от 1350 рублей за ночь. 
+
+Если у вас будет возможность увеличить бюджет, дайте знать, и я с радостью помогу!
+2025-04-05 19:18:21,199 - aiogram.event - INFO - Update id=487375158 is handled. Duration 9648 ms by bot id=7635717836
+2025-04-05 19:18:51,378 - bot.app.handlers - INFO - [2025-04-05 19:18:51] User ID: 1005066193, Username: @joouddo, Action: sent message: Хорошо, давай с бюджетом в 5000
+2025-04-05 19:18:53,429 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:18:53,430 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Хорошо, давай с бюджетом в 5000
+2025-04-05 19:18:54,924 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:18:54,925 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, False, True]
+2025-04-05 19:18:54,963 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:19:01,556 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:19:01,557 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:19:01,633 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: calculating distances
+2025-04-05 19:19:08,291 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:19:08,291 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: response generation complete
+2025-04-05 19:19:08,578 - bot.app.handlers - INFO - [2025-04-05 19:19:08] User ID: 1005066193, Username: @joouddo, Action: received response: Вот план на один день по культовым местам Новосибирска с бюджетом в 5000 рублей.
+
+### Утро
+1. **Музей "Сибирская береста"**
+   - **Адрес:** ул. Ленина, 79
+   - **Описание:** Уникальные экспонаты, связанные с народным промыслом.
+   - **Цена:** 300 рублей.
+
+### Обед
+2. **Кафе "Шоколадница"**
+   - **Адрес:** ул. Красный проспект, 45
+   - **Описание:** Уютное кафе с разнообразным меню.
+   - **Цена:** Около 600 рублей на двоих.
+
+### Послеобеденное время
+3. **Часовня Николая Чудотворца**
+   - **Адрес:** ул. Ленина, 71
+   - **Описание:** Символ города, популярное место для туристов.
+   - **Цена:** Бесплатно.
+
+4. **Городской торговый корпус**
+   - **Адрес:** ул. Красный проспект, 49
+   - **Описание:** Здесь находится краеведческий музей.
+   - **Цена:** 300 рублей.
+
+### Ужин
+5. **Ресторан "Терраса"**
+   - **Адрес:** ул. Гоголя, 5
+   - **Описание:** Приятная атмосфера и разнообразное меню.
+   - **Цена:** Около 800 рублей на двоих.
+
+### Ночлег
+6. **Хостел "Why not Hostel Novosibirsk"**
+   - **Адрес:** Вокзальная магистраль, д. 6
+   - **Цена:** От 1961 рублей за ночь.
+
+### Итог
+- **Общая стоимость:** 3961 рублей (включая все посещения и ужин). Остается запас бюджета на завтрак или дополнительные расходы.
+
+Если хотите что-то изменить или добавить, дайте знать!
+2025-04-05 19:19:08,695 - aiogram.event - INFO - Update id=487375159 is handled. Duration 17318 ms by bot id=7635717836
+2025-04-05 19:21:16,410 - bot.app.handlers - INFO - [2025-04-05 19:21:16] User ID: 1005066193, Username: @joouddo, Action: sent message: А можешь сказать какое расстояние между часовней и хостелом, чтобы я знал сколько мне мчать на железном коне
+2025-04-05 19:21:18,485 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:21:18,485 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: А можешь сказать какое расстояние между часовней и хостелом, чтобы я знал сколько мне мчать на железном коне
+2025-04-05 19:21:19,931 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:21:19,932 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 19:21:19,990 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:21:22,554 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:21:22,554 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:21:22,652 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: calculating distances
+2025-04-05 19:21:26,687 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:21:26,687 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: response generation complete
+2025-04-05 19:21:26,789 - bot.app.handlers - INFO - [2025-04-05 19:21:26] User ID: 1005066193, Username: @joouddo, Action: received response: Расстояние между **Часовней Николая Чудотворца** (ул. Ленина, 71) и **Хостелом "Why not Hostel Novosibirsk"** (Вокзальная магистраль, д. 6) составляет примерно 1 километр. Это довольно близко, так что доехать на "железном коне" будет несложно.
+2025-04-05 19:21:26,914 - aiogram.event - INFO - Update id=487375160 is handled. Duration 10504 ms by bot id=7635717836
+2025-04-05 19:27:47,749 - bot.app.handlers - INFO - [2025-04-05 19:27:47] User ID: 1005066193, Username: @joouddo, Action: sent message: Но Часовня находится на Ленина 17А
+2025-04-05 19:27:50,500 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:27:50,501 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Но Часовня находится на Ленина 17А
+2025-04-05 19:27:52,004 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:27:52,005 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 19:27:52,062 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:27:54,046 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:27:54,047 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:27:54,047 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: skipping distance calculation
+2025-04-05 19:27:54,146 - bot.app.handlers - INFO - [2025-04-05 19:27:54] User ID: 1005066193, Username: @joouddo, Action: received response: Извините, у меня нет информации о часовне на Ленина 17А. Могу помочь с информацией о других местах в Новосибирске.
+2025-04-05 19:27:54,261 - aiogram.event - INFO - Update id=487375161 is handled. Duration 6513 ms by bot id=7635717836
+2025-04-05 19:29:32,224 - bot.app.handlers - INFO - [2025-04-05 19:29:32] User ID: 1005066193, Username: @joouddo, Action: sent message: Но я точно знаю, что Часовня Николая Чудотворца находится на Ленина 17
+2025-04-05 19:29:34,544 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:29:34,545 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Но я точно знаю, что Часовня Николая Чудотворца находится на Ленина 17
+2025-04-05 19:29:36,110 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:29:36,111 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 19:29:36,167 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:29:37,495 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:29:37,496 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:29:37,496 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: skipping distance calculation
+2025-04-05 19:29:37,625 - bot.app.handlers - INFO - [2025-04-05 19:29:37] User ID: 1005066193, Username: @joouddo, Action: received response: Извините, у меня нет информации о часовне на Ленина 17. Могу предложить информацию о других местах в Новосибирске.
+2025-04-05 19:29:37,738 - aiogram.event - INFO - Update id=487375162 is handled. Duration 5513 ms by bot id=7635717836
+2025-04-05 19:29:50,277 - bot.app.handlers - INFO - [2025-04-05 19:29:50] User ID: 1005066193, Username: @joouddo, Action: sent message: Ой на красном проспекте 17
+2025-04-05 19:29:52,088 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:29:52,088 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Ой на красном проспекте 17
+2025-04-05 19:29:53,802 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:29:53,802 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 19:29:53,858 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:29:55,837 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:29:55,838 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:29:55,838 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: skipping distance calculation
+2025-04-05 19:29:56,083 - bot.app.handlers - INFO - [2025-04-05 19:29:56] User ID: 1005066193, Username: @joouddo, Action: received response: Часовня Святого Николая расположена по адресу Красный проспект, 17. Это церковь и храм, являющаяся одной из достопримечательностей Новосибирска. Информации о стоимости посещения нет, так как часовня открыта для всех желающих.
+2025-04-05 19:29:56,279 - aiogram.event - INFO - Update id=487375163 is handled. Duration 6004 ms by bot id=7635717836
+2025-04-05 19:30:15,123 - bot.app.handlers - INFO - [2025-04-05 19:30:15] User ID: 1005066193, Username: @joouddo, Action: sent message: Можешь мне сказать расстояние между этой часовней и хостелом итоговое?
+2025-04-05 19:30:17,006 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:30:17,006 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Можешь мне сказать расстояние между этой часовней и хостелом итоговое?
+2025-04-05 19:30:18,330 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:30:18,330 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 19:30:18,386 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:30:20,532 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:30:20,532 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:30:20,628 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: calculating distances
+2025-04-05 19:30:22,357 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:30:22,358 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: response generation complete
+2025-04-05 19:30:22,461 - bot.app.handlers - INFO - [2025-04-05 19:30:22] User ID: 1005066193, Username: @joouddo, Action: received response: Извините, у меня нет информации о расстоянии между Часовней Николая Чудотворца на Красном проспекте, 17 и хостелом.
+2025-04-05 19:30:22,598 - aiogram.event - INFO - Update id=487375164 is handled. Duration 7476 ms by bot id=7635717836
+2025-04-05 19:31:00,996 - bot.app.handlers - INFO - [2025-04-05 19:31:00] User ID: 1005066193, Username: @joouddo, Action: ended the dialog
+2025-04-05 19:31:01,297 - aiogram.event - INFO - Update id=487375165 is handled. Duration 301 ms by bot id=7635717836
+2025-04-05 19:31:05,532 - aiogram.event - INFO - Update id=487375166 is handled. Duration 282 ms by bot id=7635717836
+2025-04-05 19:31:08,074 - bot.app.handlers - INFO - [2025-04-05 19:31:08] User ID: 1005066193, Username: @joouddo, Action: rate - 3 ⭐⭐⭐
+2025-04-05 19:31:08,302 - aiogram.event - INFO - Update id=487375167 is handled. Duration 228 ms by bot id=7635717836
+2025-04-05 19:31:10,118 - bot.app.handlers - INFO - [2025-04-05 19:31:10] User ID: 1005066193, Username: @joouddo, Action: started new dialog
+2025-04-05 19:31:10,421 - aiogram.event - INFO - Update id=487375168 is handled. Duration 304 ms by bot id=7635717836
+2025-04-05 19:31:20,128 - bot.app.handlers - INFO - [2025-04-05 19:31:20] User ID: 1005066193, Username: @joouddo, Action: sent message: Хочу пиццу
+2025-04-05 19:31:21,765 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:31:21,765 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Хочу пиццу
+2025-04-05 19:31:23,079 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:31:23,080 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [False, True, False]
+2025-04-05 19:31:23,111 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:31:28,853 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:31:28,854 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:31:28,854 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: skipping distance calculation
+2025-04-05 19:31:28,961 - bot.app.handlers - INFO - [2025-04-05 19:31:28] User ID: 1005066193, Username: @joouddo, Action: received response: Вот несколько мест, где можно попробовать пиццу в Новосибирске:
+
+1. **Milan Pizza**
+   - Адрес: Гоголя, 17
+   - Описание: Специализируется на европейской и итальянской кухне, предлагает пиццу и торты на заказ.
+   - Средний чек: до 700 рублей.
+   - График работы: пн-вс 9.00–21.00.
+   - Сайт: [Milan Pizza](https://www.afisha.ru/novosibirsk/restaurant/milan-pizza-74869/)
+
+2. **Пиццерия**
+   - Адрес: пл. Карла Маркса, 7, МФК «Сан-сити»
+   - Описание: Специализируется на американской кухне, предлагает широкий выбор пиццы.
+   - Средний чек: до 700 рублей.
+   - График работы: пн-вс 10.00–22.00.
+   - Сайт: [Пиццерия](https://www.afisha.ru/novosibirsk/restaurant/pitstseriia-489102/)
+
+3. **Buon appetito**
+   - Адрес: Военная, 5, ТРЦ «Аура»
+   - Описание: Итальянская и русская кухня, разнообразие пиццы.
+   - Средний чек: до 700 рублей.
+   - График работы: пн-вс 10.00–22.00.
+   - Сайт: [Buon appetito](https://www.afisha.ru/novosibirsk/restaurant/buon-appetito-457274/)
+
+Выберите, что вам больше нравится!
+2025-04-05 19:31:29,131 - aiogram.event - INFO - Update id=487375169 is handled. Duration 9004 ms by bot id=7635717836
+2025-04-05 19:32:35,823 - bot.app.handlers - INFO - [2025-04-05 19:32:35] User ID: 1005066193, Username: @joouddo, Action: sent message: Есть ли рядом с какой-нибудь из этих пиццерий парк, где можно будет погулять после сытного обеда?
+2025-04-05 19:32:37,942 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:32:37,943 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Есть ли рядом с какой-нибудь из этих пиццерий парк, где можно будет погулять после сытного обеда?
+2025-04-05 19:32:39,268 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:32:39,269 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [False, True, True]
+2025-04-05 19:32:39,310 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:32:42,606 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:32:42,607 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:32:42,672 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: calculating distances
+2025-04-05 19:32:45,556 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:32:45,556 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: response generation complete
+2025-04-05 19:32:45,665 - bot.app.handlers - INFO - [2025-04-05 19:32:45] User ID: 1005066193, Username: @joouddo, Action: received response: Рядом с пиццерией **Milan Pizza** (Гоголя, 17) находится **Парк культуры и отдыха «Заельцовский»**. 
+
+**Парк культуры и отдыха «Заельцовский»**
+- Адрес: ул. Парковая, 88
+- Описание: Один из старейших парков города, с велодорожками, детскими площадками и пляжем. Здесь можно погулять и насладиться природой.
+- Вход: бесплатный.
+
+Так что, после обеда в пиццерии, вы сможете приятно провести время в парке!
+2025-04-05 19:32:45,782 - aiogram.event - INFO - Update id=487375170 is handled. Duration 9960 ms by bot id=7635717836
+2025-04-05 19:33:40,622 - bot.app.handlers - INFO - [2025-04-05 19:33:40] User ID: 1005066193, Username: @joouddo, Action: sent message: А рядом это насколько рядом?
+2025-04-05 19:33:42,854 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:33:42,855 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: А рядом это насколько рядом?
+2025-04-05 19:33:43,974 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:33:43,974 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [True, True, True]
+2025-04-05 19:33:44,032 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:33:46,523 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:33:46,524 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:33:46,611 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: calculating distances
+2025-04-05 19:33:49,359 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:33:49,360 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: response generation complete
+2025-04-05 19:33:49,456 - bot.app.handlers - INFO - [2025-04-05 19:33:49] User ID: 1005066193, Username: @joouddo, Action: received response: Парк культуры и отдыха «Заельцовский» находится примерно в 10-15 минутах пешком от пиццерии **Milan Pizza** (Гоголя, 17). Это вполне приемлемое расстояние для прогулки после обеда.
+2025-04-05 19:33:49,596 - aiogram.event - INFO - Update id=487375171 is handled. Duration 8974 ms by bot id=7635717836
+2025-04-05 19:34:55,638 - bot.app.handlers - INFO - [2025-04-05 19:34:55] User ID: 1005066193, Username: @joouddo, Action: restarted the dialog
+2025-04-05 19:34:56,011 - aiogram.event - INFO - Update id=487375172 is handled. Duration 373 ms by bot id=7635717836
+2025-04-05 19:35:25,061 - aiogram.event - INFO - Update id=487375173 is not handled. Duration 0 ms by bot id=7635717836
+2025-04-05 19:35:48,239 - bot.app.handlers - INFO - [2025-04-05 19:35:48] User ID: 1005066193, Username: @joouddo, Action: started new dialog
+2025-04-05 19:35:48,630 - aiogram.event - INFO - Update id=487375174 is handled. Duration 391 ms by bot id=7635717836
+2025-04-05 19:35:51,324 - bot.app.handlers - INFO - [2025-04-05 19:35:51] User ID: 1005066193, Username: @joouddo, Action: sent message: Привет!
+2025-04-05 19:35:53,073 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:35:53,073 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Привет!
+2025-04-05 19:35:54,320 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:35:54,320 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [False, False, False]
+2025-04-05 19:35:54,320 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:35:55,655 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:35:55,656 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:35:55,656 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: skipping distance calculation
+2025-04-05 19:35:55,859 - bot.app.handlers - INFO - [2025-04-05 19:35:55] User ID: 1005066193, Username: @joouddo, Action: received response: Привет! Как я могу помочь тебе сегодня? Ищешь маршрут по Новосибирской области или что-то другое?
+2025-04-05 19:35:56,063 - aiogram.event - INFO - Update id=487375175 is handled. Duration 4739 ms by bot id=7635717836
+2025-04-05 19:35:58,271 - bot.app.handlers - INFO - [2025-04-05 19:35:58] User ID: 1005066193, Username: @joouddo, Action: restarted the dialog
+2025-04-05 19:35:58,640 - aiogram.event - INFO - Update id=487375176 is handled. Duration 369 ms by bot id=7635717836
+2025-04-05 19:36:00,028 - aiogram.event - INFO - Update id=487375177 is not handled. Duration 0 ms by bot id=7635717836
+2025-04-05 19:36:16,215 - bot.app.handlers - INFO - [2025-04-05 19:36:16] User ID: 1005066193, Username: @joouddo, Action: started new dialog
+2025-04-05 19:36:16,471 - aiogram.event - INFO - Update id=487375178 is handled. Duration 256 ms by bot id=7635717836
+2025-04-05 19:36:21,873 - bot.app.handlers - INFO - [2025-04-05 19:36:21] User ID: 1005066193, Username: @joouddo, Action: sent message: Хочу смузи, теплое, но холодное, с лимоном, на завтрак во время обеда, в центральном районе академгородка в июне
+2025-04-05 19:36:23,871 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:36:23,871 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: Хочу смузи, теплое, но холодное, с лимоном, на завтрак во время обеда, в центральном районе академгородка в июне
+2025-04-05 19:36:25,245 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:36:25,246 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [False, True, False]
+2025-04-05 19:36:25,279 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:36:33,504 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:36:33,504 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:36:33,504 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: skipping distance calculation
+2025-04-05 19:36:33,688 - bot.app.handlers - INFO - [2025-04-05 19:36:33] User ID: 1005066193, Username: @joouddo, Action: received response: К сожалению, у меня нет информации о местах, где можно заказать смузи в Академгородке. Могу предложить кофейню 'Дудник' на Морском проспекте, 10, где вы можете попробовать торт на заказ. Она находится в Академгородке и работает с 8:00 до 21:00. Если вам нужно что-то еще, дайте знать!
+2025-04-05 19:36:33,893 - aiogram.event - INFO - Update id=487375179 is handled. Duration 12021 ms by bot id=7635717836
+2025-04-05 19:36:48,866 - bot.app.handlers - INFO - [2025-04-05 19:36:48] User ID: 1005066193, Username: @joouddo, Action: sent message: А тма есть на Морском смузи?
+2025-04-05 19:36:50,639 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:36:50,639 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: starting RAG chain, Question: А тма есть на Морском смузи?
+2025-04-05 19:36:51,921 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:36:51,922 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, context results (hotels, cafes, ents): [False, True, False]
+2025-04-05 19:36:51,952 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: processing contexts
+2025-04-05 19:36:57,376 - httpx - INFO - HTTP Request: POST https://bothub.chat/api/v2/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-05 19:36:57,377 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: generating initial response
+2025-04-05 19:36:57,377 - pipeplines.ragPipeline_tgbot - INFO - User: 1005066193, Action: skipping distance calculation
+2025-04-05 19:36:57,504 - bot.app.handlers - INFO - [2025-04-05 19:36:57] User ID: 1005066193, Username: @joouddo, Action: received response: К сожалению, у меня нет информации о том, где можно заказать смузи на Морском проспекте. Если вам нужно что-то другое, дайте знать!
+2025-04-05 19:36:57,616 - aiogram.event - INFO - Update id=487375180 is handled. Duration 8750 ms by bot id=7635717836
+2025-04-05 19:37:03,473 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-05 19:37:03,473 - aiogram.dispatcher - INFO - Polling stopped for bot @tripnsobot id=7635717836 - 'tripplanner for nso'
+2025-04-05 19:37:03,474 - aiogram.dispatcher - INFO - Polling stopped

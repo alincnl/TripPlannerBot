@@ -1,0 +1,19 @@
+[project]
+name = 'trip-planner'
+version= "v1.0.0"
+classifiers = [
+  'Development Status :: 5 - Production/Stable',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3 :: Only',
+]
+requires-python = '>=3.10'
+
+
+[project.scripts]
+cafes-parser = 'parsing_utils.cafesParser:cli'
+ent-parser = 'parsing_utils.entertainmentsParser:cli'
+hotels-parser = 'parsing_utils.hotelsParser:cli'
+preprocess-data = 'parsing_utils.dataPreprocess:cli'
+get-coords = 'geoloc_utils.getCoordinates:cli'
+get-districts = 'geoloc_utils.getDistricts:cli'
